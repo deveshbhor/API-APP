@@ -10,9 +10,13 @@ import UIKit
 
 class SourcesViewController: UITableViewController {
 
+    var sources = [[String: String]]()
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+      self.title = "Colleges In Minnesota"
+        let query = "http://universities.hipolabs.com/search?name=minnesota"
     }
 
 
